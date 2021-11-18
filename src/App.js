@@ -4,7 +4,6 @@ import FeedbackOptions from "./components/FeedbackOptions/FeedbackOptions";
 import Statistics from "./components/Statistics/Statistics";
 import Section from "./components/Section/Section";
 import Notification from "./components/Notification/Notification";
-import StatItem from "./components/StatItem/StatItem";
 import s from "./components/Section/Section.module.css";
 
 function App() {
@@ -29,6 +28,9 @@ function App() {
         break;
       case "bad":
         setBad(bad + 1);
+        break;
+      default:
+        break;
     }
   };
   const countTotalFeedback = () => {
